@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            border:  2px solid;
+            height: 20vh;
+            width: 20vw;
+            text-align:center;
+            background-color:antiquewhite;
+            border-radius:5px;
+            box-shadow: 5px 5px 5px;
+        }
+    </style>
+</head>
+<body>
+  <div class="nav">
+    <h1 id="count">0</h1>
+    <button id="incr" class="class1" onclick="inc()">+</button>
+    <button id="decr" class="class2" onclick="dec()">-</button>
+    </div>
+    <script>
+        x=0
+        console.log(x)
+        function inc(){
+            x+=1
+            console.log(x)
+            document.getElementById("count").innerText=x  
+            }
+            function dec(){
+                x-=1
+                console.log(x);
+                document.getElementById("count").innerText=x
+                   }  
+    </script>
+</body>
+</html>
